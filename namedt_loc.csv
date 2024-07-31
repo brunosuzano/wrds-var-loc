@@ -1,0 +1,17 @@
+Library,Table
+crsp,dse62exchdates
+crsp,dse62names
+crsp,dseexchdates
+crsp,dsenames
+crsp,mse62exchdates
+crsp,mse62names
+crsp,mseexchdates
+crsp,msenames
+crsp,s6z_nam
+crsp,s6z_nam_legacy
+crsp,saz_nam
+crsp,saz_nam_legacy
+crsp,stocknames
+crsp,stocknames62
+crsp,stocknames62_v2
+crsp,stocknames_v2
