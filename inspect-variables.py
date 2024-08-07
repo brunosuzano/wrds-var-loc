@@ -20,13 +20,16 @@ tables = db.list_tables(library=lib)
 tables = pd.DataFrame(tables, columns=["Table"])
 
 # Select table to work with
-tab = "fundq"
+tab = "funda"
 
 # List variables in table tab
 variables = db.describe_table(library=lib, table=tab)
 
 # Get row count
-row_count = db.get_row_count('comp', 'fundq')
+row_count = db.get_row_count('comp', 'funda')
+
+# Get the first 100 observations
+table = db.get_table(lib, tab, obs=100)
 
 # Close the connection
 db.close()
