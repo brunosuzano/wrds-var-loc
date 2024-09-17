@@ -13,20 +13,20 @@ libraries = sorted(db.list_libraries())
 libraries = pd.DataFrame(libraries, columns=["Library"])
 
 # Select library to work with
-lib = "comp"
+lib = "contrib"
 
 # List tables in library lib
 tables = db.list_tables(library=lib)
 tables = pd.DataFrame(tables, columns=["Table"])
 
 # Select table to work with
-tab = "funda"
+tab = "global_factor"
 
 # List variables in table tab
 variables = db.describe_table(library=lib, table=tab)
 
 # Get row count
-row_count = db.get_row_count('comp', 'funda')
+row_count = db.get_row_count(lib, tab)
 
 # Get the first 100 observations
 table = db.get_table(lib, tab, obs=100)

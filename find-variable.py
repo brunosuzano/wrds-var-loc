@@ -48,10 +48,10 @@ comp_libraries = [
 ]
 
 # Manual override for the library
-libraries = comp_libraries
+libraries = crsp_libraries
 
 # Define the variables to search for
-variables_to_check = ['exchcd']  # You can modify this list to include any variables you want
+variables_to_check = ['ret']  # You can modify this list to include any variables you want
 
 # Initialize a dictionary to store results for each variable
 results = {var: [] for var in variables_to_check}
