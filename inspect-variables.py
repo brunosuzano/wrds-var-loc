@@ -13,14 +13,14 @@ libraries = sorted(db.list_libraries())
 libraries = pd.DataFrame(libraries, columns=["Library"])
 
 # Select library to work with
-lib = "contrib"
+lib = "crsp"
 
 # List tables in library lib
 tables = db.list_tables(library=lib)
 tables = pd.DataFrame(tables, columns=["Table"])
 
 # Select table to work with
-tab = "global_factor"
+tab = "metasiztociz"
 
 # List variables in table tab
 variables = db.describe_table(library=lib, table=tab)
@@ -38,8 +38,8 @@ db.close()
 # Locate a specific term within variable descriptions
 # =============================================================================
 
-# Locate the term "country" or "Country" in the comment column
-mask = variables['comment'].str.contains('country', case=False, na=False)
+# # Locate the term "country" or "Country" in the comment column
+# mask = variables['comment'].str.contains('country', case=False, na=False)
 
-# Filter rows containing the term
-filtered_df = variables[mask]
+# # Filter rows containing the term
+# filtered_df = variables[mask]
